@@ -86,13 +86,13 @@ We have 3 key problems:
 5. Look at the physical limitations (power, signal levels, heat etc)
 6. Think about VALIDATION and VERIFICATION; how will you prove you have met the requirements
 ## Summary of System Engineering
-4. System design starts and ends with the customer…
+1. System design starts and ends with the customer…
 -You must understand the application and the use case of the system
-5. It is a hierarchical process and every stage relies on the previous stage
+2. It is a hierarchical process and every stage relies on the previous stage
 -You must take care throughout the process
-6. Validation (doing the right thing), and Verification (does it meet spec) are critical at all stages
+3. Validation (doing the right thing), and Verification (does it meet spec) are critical at all stages
 -When you are on the left side of the ‘V’ (Decomposition and Definition), you must be thinking how you will test and deliver the final system on the right side of the ‘V’ (Integration and Recomposition)
-7. Hardware design /Software design depend on good specifications
+4. Hardware design /Software design depend on good specifications
 ## System Engineering : Signal Conditioning
 ![|400](images/ESD_20.png)
 - In **Electronic System Design** we will consider how to provide the best possible input signals to the system. This means signals that are:
@@ -106,7 +106,7 @@ Start with perfect opamp
 ![|400](images/ESD_5.png)
 perfect opamp calculation
 ![|300](images/ESD_6.png)
-## Negative Feedback
+## [Negative Feedback](ESD/ESD_Feedback.md)
 ![|300](images/ESD_22.png)
 - **Calculate voltage at (+), (–) inputs as a function of**
 > Input voltage
@@ -143,10 +143,10 @@ Method:
 > 1. Current flows in inputs:
 > **Bias**, **Offset**
 > 2. Slow:
-> **Bandwidth**, **Slew Rate**, **Phase margin**
+> [**Bandwidth**, **Slew Rate](ESD/ESD_BW_SR_FR.md)**, **Phase margin**
 > 3. O/P has finite impedance (but reduced by feedback)
 > 4. Input voltage error:
-> **Offset**, **Common-Mode rejection**, **Power Supply rejection**, **Drift (Time / Temperature)**
+> **Offset**, [**Common-Mode rejection**, **Power Supply rejection**](ESD/ESD_CMRR_PSRR.md), **Drift (Time / Temperature)**
 
 ## How to design with imperfect components
 Specify (sub)system
@@ -200,7 +200,7 @@ Perfect Opamp + Current sources = model of a real opamp
 | --------- | ----------- | ----------- | ------------- |
 | $I_B$     | 1pA(MOSFET) | 100pA(JFET) | 10nA(Bipolar) |
 
-# Bias Current Blues
+# [Bias Current Blues](ESD/ESD_Static_Errors.md)
 1. Bias Current Blues (1)
 ![|400](images/ESD_28.png)
 > Perfect opamp $V_{out}=-(V_{IN})$
