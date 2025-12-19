@@ -9,7 +9,7 @@ Electronic System Design notes
   - [ESD_Feedback](ESD_Feedback.md)
   - [ESD_CMRR_PSRR](ESD_CMRR_PSRR.md)
   - [ESD_BW_SR_FR](ESD_BW_SR_FR.md)
-- [ESD Block 3](ED_Lecture%207%20(BJT).md) 
-- [ESD Block 4](ED_Lecture%208%20(JFET).md) 
+- [ESD Block 3](ESD_Block%203%20(IA).md) 
+- [ESD Block 4](ESD_Block%204%20(Noise).md) 
 
 ## To Be Continued
